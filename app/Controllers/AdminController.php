@@ -155,7 +155,10 @@ class AdminController extends BaseController
         $AdminModel = new PtsModel();
 
         $username = $this->request->getVar('user');
-        $password = $this->request->getVar('pass');
+        $pass = $this->request->getVar('pass');
+
+        $password = password_hash($pass, PASSWORD_BCRYPT);
+
         $nama = $this->request->getVar('nama');
         $slug = url_title($this->request->getVar('nama'), '-', true);
         $level = 'pts';

@@ -34,7 +34,6 @@
                 <div class="cat-flex" style="margin: 20px 0px">
                     <p
                         style="white-space: pre-line; font-size: 1rem; line-height: 25px; text-indent: 30px; text-align: justify;">
-                        Universitas
                         <?= $p['deskripsi'] ?>
                     </p>
                 </div>
@@ -53,8 +52,6 @@
                         <h2>Penerima Beasiswa</h2>
                     </div>
                 </div>
-
-                <!-- mahasiswa -->
                 <?php if(count($mhs)<4) : ?>
                 <div class="cat-flex" style="margin: 15px 0px;">
                     <style>
@@ -151,8 +148,6 @@
                     <?php endfor?>
                 </div>
                 <?php endif ?>
-                <!-- tutup mahasiswa -->
-
             </div>
         </div>
     </div>

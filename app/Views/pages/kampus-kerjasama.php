@@ -81,13 +81,13 @@
                         <a href="detail-kampus/<?= $kampus[$j-1]['slug'] ?>">
                             <div class="cat-item clr2 custom-hover">
                                 <div class="cat-icon">
-                                    <?php if($kampus[$j]['foto']==''):?>
+                                    <?php if($kampus[$j-1]['foto']==''):?>
                                     <div class="cat-img" style="text-align: center;">
                                         <p>Foto Tidak Ada</p>
                                     </div>
                                     <?php else :?>
                                     <div class="cat-img" style="text-align: center;">
-                                        <img src="<?= base_url('file/pt/foto_pts/' . $kampus[$j]['foto'] . ''); ?>"
+                                        <img src="<?= base_url('file/pt/foto_pts/' . $kampus[$j-1]['foto'] . ''); ?>"
                                             width="100%">
                                     </div>
                                     <?php  endif ?>
@@ -135,7 +135,6 @@
                 </div>
                 <?php endif ?>
                 <!-- tutup kampus -->
-
             </div>
         </div>
     </div>

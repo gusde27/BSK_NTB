@@ -46,7 +46,7 @@ class PtsController extends BaseController
 
             $new_pass = $this->request->getVar('new_pass');
             $new_pass2 = $this->request->getVar('new_pass2');
-        
+                
             if($new_pass == $new_pass2) {
         
                 $ptsModel->save([
